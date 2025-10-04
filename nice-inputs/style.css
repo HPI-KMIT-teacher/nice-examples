@@ -1,0 +1,32 @@
+.group {
+  position: relative;
+}
+
+input.first {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #515151;
+}
+
+label.first {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+}
+
+input.first:focus ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #7700ff;
+}
+
+input.first:focus {
+  border-width: 2px;
+  border-bottom-color: #7700ff;
+}
